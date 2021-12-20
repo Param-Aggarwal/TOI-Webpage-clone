@@ -1,0 +1,311 @@
+body{
+  margin: 0;
+  font-family: 'proximanova',sans-serif;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+li{
+  flex-shrink: 0;
+}
+
+/* header section 1 */
+.header{
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  align-items: center;
+  height: 30px;
+}
+
+
+.left{
+  margin-left: 50px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 5px 10px;
+  z-index: 1;
+  color: #000;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+hr{
+  color: #fff;
+}
+.header-left{
+  color: #fff;
+  margin: 0 5px;
+}
+.header-img{
+  height: 22px;
+}
+.right{
+  margin-right: 50px;
+}
+.header-right{
+  color: #fff;
+  margin: 0 5px;
+  flex-shrink: 0;
+  padding: 5px 7px;
+}
+.header-right:nth-child(1n+3){
+  background-color: #fff;
+  border-radius: 100%;
+  color: #4A4A4A;
+}
+.social:hover{
+  color: #000;
+}
+
+.header-right span{
+  font-size: 13px;
+}
+.wifi{
+  transform: rotate(45deg);
+}
+
+ /* header section 2 */
+.header2{
+  background-color: #000;
+  text-align: center;
+}
+
+.header2-img{
+  margin: 20px auto;
+}
+
+/* header section 3 */
+.header3{
+  background-color: #be2819;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+}
+.header3 ul{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header3 ul li{
+  padding: 5px;
+  font-size: 0.7rem;
+}
+
+.header3 ul li:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+/* label section */
+
+.label-news{
+  text-decoration: none;
+  color: #003365;
+  margin-left: 12.5vw;
+}
+.label ul{
+  font-size: 0.8rem;
+}
+.search{
+  margin-right: 2vw;
+}
+
+/* heading section */
+.heading1{
+  color: #000;
+  font-size: 2rem;
+  border-bottom: 2px solid #000;
+  margin: 5px 15vw;
+
+}
+
+.news-image{
+  width: 140px;
+  height: 85px;
+  margin: 5px 10px 5px 5px;;
+  float: left;
+}
+.news-title{
+  margin-bottom: 10px;
+}
+.news-description{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 1.25;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+
+.flex-container{
+  display: flex;
+  margin: 5px 0;
+  justify-content: center;
+}
+.flex1{
+  width: 650px;
+  flex-shrink: 0;
+}
+.flex2{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popular,
+.entertainment,
+.business,
+.tv,
+.sports{
+  padding: 5px 10px;
+}
+
+/* popular section */
+.popular-title{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.popular-subheading{
+  margin: 5px 5px;
+  padding: 0;
+}
+.popular-subheading li{
+  margin: 0;
+  padding: 0.7vw 1vw;
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: bolder;
+  background-color: #BDBDBD;
+  border-right: 1px solid #f5f5f5;
+  border-bottom: 3px solid #303030;
+}
+.popular-subheading li:nth-child(1){
+  background-color: #303030;
+}
+.popular-subheading li:hover{
+  background-color: #303030;
+}
+.popular-text{
+  font-weight: normal;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+.popular-footer{
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+
+/* entertainment section */
+.entertainment-title,
+.business-title,
+.tv-title,
+.sports-title{
+  color: #000;
+  font-weight: bolder;
+  margin: 0;
+}
+.entertainment-hr1,
+.business-hr1,
+.tv-hr1,
+.sports-hr1{
+  color: #000;
+  border-top: 2px solid #000;
+}
+.entertainment-img,
+.business-img,
+.tv-img,
+.sports-img{
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.entertainment-text,
+.business-text,
+.tv-text,
+.sports-text{
+  color: #454545;
+}
+.entertainment-hr2,
+.business-hr2,
+.tv-hr2,
+.sports-hr2{
+  clear: both;
+}
+
+.buttons{
+  text-align: center;
+}
+@media screen and (max-width: 1000px){
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex1{
+    order: 2;
+    width: 750px;
+  }
+  .flex2{
+    order: 1;
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .flex-container{
+    display: flex;
+    margin: 5px 0;
+    justify-content: center;
+  }
+  .flex1{
+    width: 650px;
+    order: 1;
+  }
+  .flex2{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+}
+
+@media screen and (max-width: 1028px){
+  .header2{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .flex-container{
+    display: flex;
+    margin: 5px 0;
+    justify-content: center;
+  }
+  .flex1{
+    width: 650px;
+    order: 1;
+  }
+  .flex2{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+}
